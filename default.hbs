@@ -29,16 +29,7 @@
 <body class="{{body_class}}">
     {{! Sidebar }}
     <aside id="sidebar" class="sidebar">
-       <ul>
-         <li><a href="{{@blog.url}}"><i class="fa fa-home"></i> Home</a></li>
-         <!-- Static Pages -->
-         <!-- Simply Copy the line of code below-->
-         <!-- Change the "About" to whatever your page name is -->
-         <!-- Change the icon -> http://fontawesome.io/icons/ -->
-         <li><a href="{{@blog.url}}/about"><i class="fa fa-user"></i> About</a></li>
-         <!-- /Static Pages -->
-         <li><a href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i> Subscribe</a></li>
-      </ul>
+      {{> sidebar-links}}
     </aside>
     {{! Everything else gets inserted here }}
     <div class="page-wrapper">
