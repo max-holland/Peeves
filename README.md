@@ -33,6 +33,18 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 5. Go to line 492 or search for **body .top-header-bg**.
 6. Once you have found it change the url to your image url.
 
+#### Adding/Changing the sidebar links
+1. 1. Firstly go to the partials folder.
+2. Open up **sidebar-links.hbs**
+3. To add a static page copy the code below and change the **about** at the end of the link to be the name of your static page.
+4. Copy your new link into the **ul**
+
+Code to copy: 
+`<li><a href="{{@blog.url}}/about"><i class="fa fa-user"></i> About</a></li>`
+
+Example:
+`<li><a href="{{@blog.url}}/contact"><i class="fa fa-user"></i> About</a></li>`
+
 #### Adding Disqus comments
 1. Go into the partials folder.
 2. Open up **comments.hbs**.
@@ -41,10 +53,10 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 5. Open up **post.hbs**.
 6. Un-rem the comment code. Example below
 
-Remmed out
+Remmed out:
 `<!--{{> comments}}-->`
 
-Un remmed
+Un remmed:
 `{{> comments}}`
 
 Proudly made in the U.K using [Atom](https://atom.io/).
