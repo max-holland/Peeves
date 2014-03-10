@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<section id="post-container" role='main' class="grid-container main-container">
+
+    <article class="post" id="{{id}}">
+
+        {{! Everything inside the #post tags pulls data from the post }}
+        {{#post}}
+        <header>
+            <h2 class="post-title">{{title}}</h2>
+        </header>
+        <section class="post-text">
+            {{content}}
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="{{author.website}}" target="_blank"><img class="blogged-by-img" src="{{author.image}}" alt=""><span class="blogged-by">{{author.name}}</span></a>
+                </li>
+                <span class="actions">
+                   <li class="notes"><i class="fa fa-clock-o"></i> <span class="hide-on-mobile">{{date published_at format="DD MMMM YYYY"}}</span><span class="hide-on-desktop hide-on-tablet">{{date published_at format="DD/MM/YYYY"}}</span></li>
+                 </span>
+            </ul>
+        </footer>
+
+        {{/post}}
+
+    </article>
+
+</section>
+
+<!--{{> comments}}-->

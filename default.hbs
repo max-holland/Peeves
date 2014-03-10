@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="{{asset "stylesheets/unsemantic-grid-responsive.css"}}" rel="stylesheet" type="text/css">
+    <link href="{{asset "stylesheets/style.css" }}" rel='stylesheet'>
+    <link href="{{asset "stylesheets/ir_black.css" }}" rel='stylesheet'>
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js'></script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    {{! Sidebar }}
+    <aside id="sidebar" class="sidebar">
+       <ul>
+         <li><a href="{{@blog.url}}"><i class="fa fa-home"></i> Home</a></li>
+         <!-- Static Pages -->
+         <!-- Simply Copy the line of code below-->
+         <!-- Change the "About" to whatever your page name is -->
+         <!-- Change the icon -> http://fontawesome.io/icons/ -->
+         <li><a href="{{@blog.url}}/about"><i class="fa fa-user"></i> About</a></li>
+         <!-- /Static Pages -->
+         <li><a href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i> Subscribe</a></li>
+      </ul>
+    </aside>
+    {{! Everything else gets inserted here }}
+    <div class="page-wrapper">
+        <nav id="navbar" class="navbar">
+         <button class="menu-btn" id="openMenu"><i class="fa fa-bars"></i></button>
+        </nav>
+
+            {{{body}}}
+
+  </div>
+
+<footer class="grid-container">
+    <div class="site-footer">
+      <div class="grid-100 mobile-grid-100" style="text-align:center;">
+           <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+           <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+      </div>
+  </div>
+</footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <!--<script src="{{asset "javascripts/backstretch.js" }}"></script>
+    <script src="{{asset "javascripts/highlight.pack.js" }}"></script>-->
+    <script src="{{asset "javascripts/plugins.js" }}"></script>
+    <script src="{{asset "javascripts/script.js" }}"></script>
+
+</body>
+</html>
