@@ -1,6 +1,7 @@
 # Peeves
 
-## [View Demo Here](http://mholland.ghost.io/)
+## [View Demo Here](http://mholland.ghost.io/) | [Download Here](https://github.com/AtomicThemes/Peeves/releases/latest)
+
 
 Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography.
 
@@ -12,7 +13,7 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 * Disqus support
 
 ## Installation
-1. Download the theme by clicking here.
+1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
 2. Extract the the .zip file.
 
 #### Changing social links
