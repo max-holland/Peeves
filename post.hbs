@@ -5,23 +5,23 @@
 
 <section id="post-container" role='main' class="grid-container main-container">
 
-    <article class="post" id="{{id}}">
+    <article class="post" id="{{id}}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
         <header>
-            <h2 class="post-title">{{title}}</h2>
+            <h2 class="post-title" itemprop="name headline">{{title}}</h2>
         </header>
-        <section class="post-text">
+        <section class="post-text" itemprop="articleBody text">
             {{content}}
         </section>
         <footer>
             <ul>
                 <li>
-                    <img class="blogged-by-img" src="{{author.image}}" alt=""><span class="blogged-by">{{author.name}}</span>
+                  {{> author}}
                 </li>
                 <span class="actions">
-                   <li class="notes"><i class="fa fa-clock-o"></i> <span class="hide-on-mobile">{{date published_at format="DD MMMM YYYY"}}</span><span class="hide-on-desktop hide-on-tablet">{{date published_at format="DD/MM/YYYY"}}</span></li>
+                   <li class="notes"><i class="fa fa-clock-o"></i> <span class="hide-on-mobile" itemprop="datePublished">{{date published_at format="DD MMMM YYYY"}}</span><span class="hide-on-desktop hide-on-tablet">{{date published_at format="DD/MM/YYYY"}}</span></li>
                  </span>
             </ul>
         </footer>
