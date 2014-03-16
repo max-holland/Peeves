@@ -38,12 +38,21 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 2. Open up **sidebar-links.hbs**
 3. To add a static page copy the code below and change the **about** at the end of the link to be the name of your static page.
 4. Copy your new link into the **ul**
-
+ 
 Code to copy: 
 `<li><a href="{{@blog.url}}/about"><i class="fa fa-user"></i> About</a></li>`
 
 Example:
 `<li><a href="{{@blog.url}}/contact"><i class="fa fa-user"></i> About</a></li>`
+ 
+#### Google Plus Authorship
+1. Log into the admin for your blog.
+2. Click your your account in the top right and click **"Your Profile"**
+3. Change the website input box to point at your google plus.
+4. Save it then test it [here](http://www.google.com/webmasters/tools/richsnippets) 
+5. You might need to edit your google plus profile to point at your ghost blog. Follow the instructions [here](https://support.google.com/webmasters/answer/2539557?hl=en). You only need to do step **2.**
+ 
+
 
 #### Adding Disqus comments
 1. Go into the partials folder.
