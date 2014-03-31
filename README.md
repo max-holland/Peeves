@@ -1,6 +1,8 @@
 # Peeves
 
-## [View Demo Here](http://mholland.ghost.io/) | [Download Here](https://github.com/AtomicThemes/Peeves/releases/latest)
+## [View Demo Here](http://mholland.ghost.io/)
+
+### Ghost v0.4.1 [Download Here](https://github.com/AtomicThemes/Peeves/releases/tag/v1.0.6)
 
 
 Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography.
