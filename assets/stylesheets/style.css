@@ -599,7 +599,12 @@ body .post header h2 {
   font-weight: 700;
   margin: 0;
 }
-/* line 238, ../sass/partials/_page.scss */
+/* line 236, ../sass/partials/_page.scss */
+body .post header img, body .post header iframe, body .post header object, body .post header object embed {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+/* line 242, ../sass/partials/_page.scss */
 body .post blockquote {
   margin: 0;
   font-size: 18px;
@@ -611,7 +616,7 @@ body .post blockquote {
   margin-left: 10px;
   padding-left: 10px;
 }
-/* line 255, ../sass/partials/_page.scss */
+/* line 259, ../sass/partials/_page.scss */
 body .post section {
   color: #4d4d4d;
   font-size: 18px;
@@ -620,56 +625,56 @@ body .post section {
   -webkit-font-smoothing: antialiased;
   line-height: 1.7em;
 }
-/* line 264, ../sass/partials/_page.scss */
+/* line 268, ../sass/partials/_page.scss */
 body .post section p, body .post section blockquote {
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
 }
-/* line 269, ../sass/partials/_page.scss */
+/* line 273, ../sass/partials/_page.scss */
 body .post section a {
   text-decoration: underline;
 }
-/* line 271, ../sass/partials/_page.scss */
+/* line 275, ../sass/partials/_page.scss */
 body .post section a:hover {
   text-decoration: none;
 }
-/* line 275, ../sass/partials/_page.scss */
+/* line 279, ../sass/partials/_page.scss */
 body .post section h1, body .post section h2, body .post section h3, body .post section h4, body .post section h5, body .post section h6 {
   color: #333332;
   font-weight: 700;
 }
-/* line 279, ../sass/partials/_page.scss */
+/* line 283, ../sass/partials/_page.scss */
 body .post section h1 {
   font-size: 2em;
 }
-/* line 280, ../sass/partials/_page.scss */
+/* line 284, ../sass/partials/_page.scss */
 body .post section h2 {
   font-size: 1.5em;
 }
-/* line 281, ../sass/partials/_page.scss */
+/* line 285, ../sass/partials/_page.scss */
 body .post section h3 {
   font-size: 1.17em;
 }
-/* line 282, ../sass/partials/_page.scss */
+/* line 286, ../sass/partials/_page.scss */
 body .post section h4 {
   font-size: 1em;
 }
-/* line 283, ../sass/partials/_page.scss */
+/* line 287, ../sass/partials/_page.scss */
 body .post section h5 {
   font-size: 0.83em;
 }
-/* line 284, ../sass/partials/_page.scss */
+/* line 288, ../sass/partials/_page.scss */
 body .post section h6 {
   font-size: 0.67em;
 }
-/* line 287, ../sass/partials/_page.scss */
+/* line 291, ../sass/partials/_page.scss */
 body .post footer {
   color: #b3b3b1;
   font-size: 18px;
   margin-top: 40px;
 }
-/* line 292, ../sass/partials/_page.scss */
+/* line 296, ../sass/partials/_page.scss */
 body .post footer .blogged-by-img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -681,7 +686,7 @@ body .post footer .blogged-by-img {
   margin-right: 10px;
   float: left;
 }
-/* line 299, ../sass/partials/_page.scss */
+/* line 303, ../sass/partials/_page.scss */
 body .post footer .blogged-by {
   float: left;
   font-weight: 300;
@@ -689,34 +694,34 @@ body .post footer .blogged-by {
   position: relative;
   top: 2px;
 }
-/* line 307, ../sass/partials/_page.scss */
+/* line 311, ../sass/partials/_page.scss */
 body .post footer ul {
   padding: 0;
   padding-top: 2px;
   padding-bottom: 10px;
   list-style: none;
 }
-/* line 312, ../sass/partials/_page.scss */
+/* line 316, ../sass/partials/_page.scss */
 body .post footer ul li {
   float: left;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 316, ../sass/partials/_page.scss */
+/* line 320, ../sass/partials/_page.scss */
 body .post footer ul li:last-child {
   margin-right: 0;
 }
-/* line 323, ../sass/partials/_page.scss */
+/* line 327, ../sass/partials/_page.scss */
 body .post .permalink-h2 {
   font-size: 24px;
   font-weight: 600;
 }
-/* line 327, ../sass/partials/_page.scss */
+/* line 331, ../sass/partials/_page.scss */
 body .post .actions {
   float: right;
   margin-top: 5px;
 }
-/* line 330, ../sass/partials/_page.scss */
+/* line 334, ../sass/partials/_page.scss */
 body .post .actions .notes {
   font-size: 14px;
   font-weight: 400;
@@ -724,20 +729,20 @@ body .post .actions .notes {
   margin-top: 1px;
   color: #cccccc;
 }
-/* line 338, ../sass/partials/_page.scss */
+/* line 342, ../sass/partials/_page.scss */
 body .post .tags {
   margin-top: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 345, ../sass/partials/_page.scss */
+/* line 349, ../sass/partials/_page.scss */
 body .pagination {
   max-width: 640px;
   text-align: center;
   margin: auto;
   padding-top: 30px;
 }
-/* line 351, ../sass/partials/_page.scss */
+/* line 355, ../sass/partials/_page.scss */
 body .site-footer {
   color: #b3b3b1;
   font-weight: 300;
@@ -747,13 +752,13 @@ body .site-footer {
   padding: 30px 0;
 }
 
-/* line 361, ../sass/partials/_page.scss */
+/* line 365, ../sass/partials/_page.scss */
 .adsense {
   display: none;
   margin: auto;
   padding-top: 30px;
 }
-/* line 365, ../sass/partials/_page.scss */
+/* line 369, ../sass/partials/_page.scss */
 .adsense iframe {
   border: 1px solid #f2f2f0;
 }
