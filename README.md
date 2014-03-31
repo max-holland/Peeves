@@ -12,6 +12,7 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 * Responsive design
 * Social media links
 * Disqus support
+* Tag pages
 
 ## Installation
 1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
