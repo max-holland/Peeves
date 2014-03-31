@@ -24,6 +24,13 @@
                    <li class="notes"><i class="fa fa-clock-o"></i> <span class="hide-on-mobile" itemprop="datePublished">{{date published_at format="DD MMMM YYYY"}}</span><span class="hide-on-desktop hide-on-tablet">{{date published_at format="DD/MM/YYYY"}}</span></li>
                  </span>
             </ul>
+              <ul class="actions">
+                <span class="notes">
+                     {{#foreach tags}}
+                        <li><a href="{{url}}">#{{name}}</a></li>
+                    {{/foreach}}
+                </span
+            </ul>
         </footer>
 
         {{/post}}
