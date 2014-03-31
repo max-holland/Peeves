@@ -667,8 +667,9 @@ body .post section h6 {
 body .post footer {
   color: #b3b3b1;
   font-size: 18px;
+  margin-top: 40px;
 }
-/* line 291, ../sass/partials/_page.scss */
+/* line 292, ../sass/partials/_page.scss */
 body .post footer .blogged-by-img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -680,7 +681,7 @@ body .post footer .blogged-by-img {
   margin-right: 10px;
   float: left;
 }
-/* line 298, ../sass/partials/_page.scss */
+/* line 299, ../sass/partials/_page.scss */
 body .post footer .blogged-by {
   float: left;
   font-weight: 300;
@@ -688,38 +689,34 @@ body .post footer .blogged-by {
   position: relative;
   top: 2px;
 }
-/* line 306, ../sass/partials/_page.scss */
+/* line 307, ../sass/partials/_page.scss */
 body .post footer ul {
   padding: 0;
   padding-top: 2px;
   padding-bottom: 10px;
   list-style: none;
 }
-/* line 311, ../sass/partials/_page.scss */
+/* line 312, ../sass/partials/_page.scss */
 body .post footer ul li {
   float: left;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 315, ../sass/partials/_page.scss */
+/* line 316, ../sass/partials/_page.scss */
 body .post footer ul li:last-child {
   margin-right: 0;
 }
-/* line 319, ../sass/partials/_page.scss */
-body .post footer ul i {
-  margin-right: 5px;
-}
-/* line 325, ../sass/partials/_page.scss */
+/* line 323, ../sass/partials/_page.scss */
 body .post .permalink-h2 {
   font-size: 24px;
   font-weight: 600;
 }
-/* line 329, ../sass/partials/_page.scss */
+/* line 327, ../sass/partials/_page.scss */
 body .post .actions {
   float: right;
   margin-top: 5px;
 }
-/* line 332, ../sass/partials/_page.scss */
+/* line 330, ../sass/partials/_page.scss */
 body .post .actions .notes {
   font-size: 14px;
   font-weight: 400;
@@ -727,14 +724,20 @@ body .post .actions .notes {
   margin-top: 1px;
   color: #cccccc;
 }
-/* line 342, ../sass/partials/_page.scss */
+/* line 338, ../sass/partials/_page.scss */
+body .post .tags {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 345, ../sass/partials/_page.scss */
 body .pagination {
   max-width: 640px;
   text-align: center;
   margin: auto;
   padding-top: 30px;
 }
-/* line 348, ../sass/partials/_page.scss */
+/* line 351, ../sass/partials/_page.scss */
 body .site-footer {
   color: #b3b3b1;
   font-weight: 300;
@@ -744,13 +747,13 @@ body .site-footer {
   padding: 30px 0;
 }
 
-/* line 358, ../sass/partials/_page.scss */
+/* line 361, ../sass/partials/_page.scss */
 .adsense {
   display: none;
   margin: auto;
   padding-top: 30px;
 }
-/* line 362, ../sass/partials/_page.scss */
+/* line 365, ../sass/partials/_page.scss */
 .adsense iframe {
   border: 1px solid #f2f2f0;
 }
