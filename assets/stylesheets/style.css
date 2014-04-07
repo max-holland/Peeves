@@ -487,10 +487,10 @@ body .navbar-safari.opened {
 body .top-header {
   width: 100%;
   height: 450px;
+  background-color: #191918;
 }
 /* line 130, ../sass/partials/_page.scss */
 body .top-header-bg {
-  background: URL("https://s3.amazonaws.com/ooomf-com-files/Ta3Z3hRxTTCTHmi1s1B1_Brooklyn_Bridge_by_Anders_Jilden.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -498,7 +498,6 @@ body .top-header-bg {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #191918;
 }
 /* line 139, ../sass/partials/_page.scss */
 body .header {

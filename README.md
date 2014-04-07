@@ -28,12 +28,12 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 `<li><a href="https://twitter.com/mholland_" target="_blank"><i class="fa fa-twitter-square"></i></a></li>`
 
 #### Changing the header image
-1. Firstly go to the partials folder.
-2. Open up **header-image.hbs**
-3. Change the value to your image url.
-4. Now go to the assets folder, open the stylesheets folder then open **stylesheet.css**
-5. Go to line 492 or search for **body .top-header-bg**.
-6. Once you have found it change the url to your image url.
+1. Firstly go to the admin page for you blog
+2. Go to your profile by clicking your name in the top right corner.
+3. Click the **General** tab.
+4. Scroll down to the **Blog Cover** heading.
+5. Click upload image and upload your image.
+
 
 #### Adding/Changing the sidebar links
 1. 1. Firstly go to the partials folder.

@@ -5,7 +5,7 @@
 
 {{! The big featured header on the homepage, with the site logo and description }}
 <header  class="top-header top-header-bg" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-{{> header-image}}
+<input type="hidden" value="{{#if @blog.cover}}{{@blog.cover}}{{/if}}" name="bg-link" id="bg-link">
   <div class="grid-container height-100">
     <div class="grid-100 mobile-grid-100 header height-100">
     <div class="align-content">
