@@ -1,6 +1,6 @@
 # Peeves
 
-## [View Demo Here](http://mholland.ghost.io/) |  [Download Here](https://github.com/AtomicThemes/Peeves/releases/latest)
+## [View Demo Here](http://peeves.atomicthemes.co) |  [Download Here](https://github.com/AtomicThemes/Peeves/releases/latest)
 ### Ghost v0.4.2 [Download Here](https://github.com/AtomicThemes/Peeves/releases/latest) 
 ### Ghost v0.4.1 [Download Here](https://github.com/AtomicThemes/Peeves/releases/tag/v1.0.6) 
 
