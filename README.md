@@ -14,14 +14,18 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 4. Re-zip the file and upload to your ghost blog.
 
 ##Header Images
-For high quality header images i recommened using either unsplash.com or jaymini.com.
+For high quality header/post header images I recommened using either [unsplash.com](http://unsplash.com/) or [jaymantri.com/](http://jaymantri.com/) .
 
 #### Adding the index header image
-1. Go to your account 
-
+1. Login to your admin page
+2. Go to settings
+3. Scroll down to the blog cover and upload your image
 
 #### Adding about page header image
-1 Go to your profile
+1. Login to your admin page
+2. Click on your name in the right hand corner
+3. Click your profile
+4. Click change cover and upload your image
 
 #### Adding a post/static header image
 1. The first image in the post is taken to be used as the header image
@@ -35,15 +39,13 @@ For high quality header images i recommened using either unsplash.com or jaymini
 
 #### Adding a new sidebar link
 1. Follow steps 1. & 2. above.
-2. Copy the code below and change it then paste it in.
-
-`<li><a href="Your-Link-Here">Your-Link-Name-Here</a></li>`
+2. Copy one the the lines of code under the links heading.
+3. Change the href to be your link and the text to be your text.
 
 #### Adding a new sidebar link
 1. Follow steps 1. & 2. above.
-2. Copy the code below and change it then paste it in.
-
-`<li><a href="Your-Link-Here" target="_blank">Your-Link-Name-Here</a></li>`
+2. Copy one of the lines of code under the follow me heading
+3. Change the href to be your social network link and the text to be the social network.
 
 ## Adding Disqus comments
 1. Go into the partials folder.
