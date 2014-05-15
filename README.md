@@ -5,7 +5,7 @@
 ### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/latest) 
 ### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6) 
 
-Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography.
+Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography. And it's mobile optimized!
 
 ## Installation
 1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
