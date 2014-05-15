@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+{{#post}}
+    <span itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="main-header about-page-header static-page-header">
+
+        </header>
+        <section id="post-container" role='main' class="main-section">
+            <div class="grid-container grid-720">
+                <div class="loading-animation grid-100 mobile-grid-100">
+                <div class="progress"><div>Loading…</div></div>
+                </div>
+                    <article class="post hide-post about-page-post static-page-post" id="{{id}}">
+                        <header>
+                            <img src="{{author.image}}">
+                            <h2 itemprop="name">{{{title}}}</h2>
+                        </header>
+                        <section class="post-text">
+                            {{content}}
+                        </section>
+                        <footer>
+                        </footer>
+                </article>
+            </div>
+        </section>
+    </span>
+    <input type="hidden" id="hidden-bg" value="">
+{{/post}}

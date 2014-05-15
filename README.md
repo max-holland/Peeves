@@ -1,0 +1,68 @@
+# Peeves
+
+## [View Demo Here](http://maxholland.me) |  [Download Here](https://github.com/mholland1337/Peeves/releases/latest)
+
+### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/latest) 
+### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6) 
+
+Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography.
+
+## Installation
+1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
+2. Extract the .zip file.
+3. Make the appropriate changes e.g. side bar links
+4. Re-zip the file and upload to your ghost blog.
+
+##Header Images
+For high quality header images i recommened using either unsplash.com or jaymini.com.
+
+#### Adding the index header image
+1. Go to your account 
+
+
+#### Adding about page header image
+1 Go to your profile
+
+#### Adding a post/static header image
+1. The first image in the post is taken to be used as the header image
+2. Place an image at the top of your ghost post and it will become the post's header image. This image will be removed from the post content as it's seen as the "header image".
+
+
+## Changing sidebar/social links
+1. Go into the partials folder.
+2. Open up **sidebar.hbs** in your text editor.
+3. Replace the existing link **href** with your link.
+
+#### Adding a new sidebar link
+1. Follow steps 1. & 2. above.
+2. Copy the code below and change it then paste it in.
+
+`<li><a href="Your-Link-Here">Your-Link-Name-Here</a></li>`
+
+#### Adding a new sidebar link
+1. Follow steps 1. & 2. above.
+2. Copy the code below and change it then paste it in.
+
+`<li><a href="Your-Link-Here" target="_blank">Your-Link-Name-Here</a></li>`
+
+## Adding Disqus comments
+1. Go into the partials folder.
+2. Open up **comments.hbs**.
+3. Replace the disqus shortname with your disqus shortname (see example)
+4. Save it.
+5. Open up **post.hbs**.
+6. Un-rem the comment code. Example below
+
+Remmed out:
+`<!--{{> comments}}-->`
+
+Un remmed:
+`{{> comments}}`
+
+## GooglePlus Authorship
+1. Go into the partials folder.
+2. Open up **google-authorship.hbs**.
+3. Paste the link of your google plus profile into href="" (see example)
+
+## Credit
+I would like to thank my pal [Riccardo Guglielmino](http://www.riccardoguglielmino.com/). Who contributed to the original source files not hosted on github.

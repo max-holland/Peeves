@@ -1,0 +1,55 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+{{! The big featured header on the homepage, with the site description }}
+
+<header class="main-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="grid-container grid-720">
+        <div class="inner-header">
+            <span class="table-span">
+                <span>
+                    <h1 itemprop="name">{{@blog.title}}</h1>
+                    <h2 itemprop="description">{{@blog.description}}</h2>
+                </span>
+            </span>
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<section id="post-container" role='main' class="main-section">
+    <div class="grid-container grid-720">
+        <div class="loading-animation grid-100 mobile-grid-100">
+            <div class="progress"><div>Loading…</div></div>
+        </div>
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+    <article class="post hide-post" id="{{id}}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h2 class="post-title" itemprop="name headline"><a href="{{url}}" class="post-link">{{{title}}}</a></h2>
+        </header>
+        <section class="post-text" itemprop="articleBody text">
+            <p>{{excerpt}}&hellip;</p>
+        </section>
+        <footer>
+            <ul class="clearfix">
+            <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <img class="author-image hide-on-mobile" src="{{author.image}}" alt="{{author.name}}"><span class="author-info"><span rel="author" itemprop="url name">{{author.name}}</span> {{tags separator=", " prefix="in "}}</span>
+            </li>
+
+            </ul>
+        </footer>
+    </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+    </div>
+</section>
+
+<input type="hidden" id="hidden-bg" value="{{#if @blog.cover}}{{@blog.cover}}{{/if}}">

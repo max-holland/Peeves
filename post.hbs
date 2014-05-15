@@ -1,0 +1,84 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+
+        {{! Everything inside the #post tags pulls data from the post }}
+        {{#post}}
+
+ <span itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="main-header post-page-header">
+      <div class="grid-container grid-720">
+        <div class="inner-header">
+        <span class="author-info post-reading-time hide-on-desktop hide-on-tablet"></span> 
+        <span class="table-span">
+            <span>
+                <h1 itemprop="name">{{{title}}}</h1>
+                 <ul class="clearfix">
+                <li >
+                    <img class="author-image hide-on-mobile" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
+                      <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
+                      <span class="author-info post-reading-time hide-on-mobile" style="float:right;"></span> 
+                  </li>
+
+              </ul>
+
+            </span>
+        </span>
+        </div>
+      </div>
+    </header>
+
+    <section id="post-container" role='main' class="main-section">
+        <div class="grid-container grid-720">
+        <div class="loading-animation grid-100 mobile-grid-100">
+            <div class="progress"><div>Loading…</div></div>
+        </div>
+
+        <article class="post hide-post post-page-post" id="{{id}}">
+            <section class="post-text" itemprop="articleBody text">
+                {{content}}
+            </section>
+            <section class="post-page-share clearfix">
+              <ul>
+                <span class="date-posted">
+                  <li><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></li>
+                </span>
+                <span class="share-icons">
+                  <li class="share-title">Share on:</li>
+                  <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a></li>
+                </span>
+              </ul>
+            </section>
+            <footer class="clearfix">
+              <section class="post-page-author">
+                <small>About the author</small>
+                <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <ul class="clearfix">
+
+                    <li><img src="{{author.image}}" alt="{{author.name}}"></li>
+                    <li>
+                      <h3 rel="author" itemprop="url name">{{author.name}}</h3>
+                      <p>{{author.bio}}</p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!--{{> comments}}-->
+            </footer>  
+        </article>
+        </div>
+    </section>
+</span>
+  <input type="hidden" id="hidden-bg" value="">
+
+        {{/post}}
+
+
