@@ -7,6 +7,18 @@
 
 Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography. And it's mobile optimized!
 
+## Features
+* Sidebar
+* Menu btn takes first letter blog blog title
+* Header images
+* Post read time
+* Custom about page
+* Custom tags page
+* Google authorship
+* Responsive design
+* Disqus comment support
+* [Structured data](http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fmaxholland.me%2Fi-want-a-nodecopter%2F)
+
 ## Installation
 1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
 2. Extract the .zip file.
