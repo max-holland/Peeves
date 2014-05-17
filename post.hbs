@@ -12,15 +12,18 @@
     <header class="main-header post-page-header">
       <div class="grid-container grid-720">
         <div class="inner-header">
-        <span class="author-info post-reading-time hide-on-desktop hide-on-tablet"></span> 
         <span class="table-span">
             <span>
                 <h1 itemprop="name">{{{title}}}</h1>
                  <ul class="clearfix">
-                <li >
-                    <img class="author-image hide-on-mobile" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
+                <li class="hide-on-mobile">
+                    <img class="author-image" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
                       <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
-                      <span class="author-info post-reading-time hide-on-mobile" style="float:right;"></span> 
+                      <span class="author-info post-reading-time " style="float:right;"></span> 
+                  </li>
+                  <li class="hide-on-desktop hide-on-tablet">
+                    <img class="author-image" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} </span>
+                      <span class="author-info post-reading-time" style="float:right;"></span> 
                   </li>
 
               </ul>
@@ -58,6 +61,12 @@
               </ul>
             </section>
             <footer class="clearfix">
+                      {{#if tags}}
+              <section class="post-page-tags hide-on-desktop hide-on-tablet">
+                <small>Tags</small>
+                <p>{{tags separator=" , "}}</p>
+              </section>
+              {{/if}}
               <section class="post-page-author">
                 <small>About the author</small>
                 <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -71,6 +80,7 @@
                   </ul>
                 </div>
               </section>
+    
               <!--{{> comments}}-->
             </footer>  
         </article>
