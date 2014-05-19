@@ -16,6 +16,7 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 * Custom tags page
 * Google authorship
 * Responsive design
+* Image lightbox
 * Disqus comment support
 * [Structured data](http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fmaxholland.me%2Fi-want-a-nodecopter%2F)
 
