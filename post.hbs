@@ -17,12 +17,12 @@
                 <h1 itemprop="name">{{{title}}}</h1>
                  <ul class="clearfix">
                 <li class="hide-on-mobile">
-                    <img class="author-image" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
+                    {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
                       <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
                       <span class="author-info post-reading-time " style="float:right;"></span> 
                   </li>
                   <li class="hide-on-desktop hide-on-tablet">
-                    <img class="author-image" src="{{author.image}}" alt="{{author.name}}"><span class="author-info">{{author.name}} </span>
+                    {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} </span>
                       <span class="author-info post-reading-time" style="float:right;"></span> 
                   </li>
 
@@ -72,8 +72,13 @@
                 <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
                   <ul class="clearfix">
 
+                    
+                    {{#if author.image}}
                     <li><img src="{{author.image}}" alt="{{author.name}}"></li>
-                    <li>
+                      <li>
+                    {{else}}
+                      <li style="margin-left:0;" >
+                    {{/if}}
                       <h3 rel="author" itemprop="url name">{{author.name}}</h3>
                       <p>{{author.bio}}</p>
                     </li>

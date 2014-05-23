@@ -38,7 +38,7 @@
         <footer>
             <ul class="clearfix">
             <li itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <img class="author-image hide-on-mobile" src="{{author.image}}" alt="{{author.name}}"><span class="author-info"><span rel="author" itemprop="url name">{{author.name}}</span> {{tags separator=", " prefix="in "}}</span>
+                {{#if author.image}}<img class="author-image hide-on-mobile" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info"><span rel="author" itemprop="url name">{{author.name}}</span> {{tags separator=", " prefix="in "}}</span>
             </li>
 
             </ul>
