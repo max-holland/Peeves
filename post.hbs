@@ -10,90 +10,91 @@
 
  <span itemscope itemtype="http://schema.org/BlogPosting">
     <header class="main-header post-page-header">
-      <div class="grid-container grid-720">
-        <div class="inner-header">
-        <span class="table-span">
-            <span>
-                <h1 itemprop="name">{{{title}}}</h1>
-                 <ul class="clearfix">
-                <li class="hide-on-mobile">
-                    {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
-                      <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
-                      <span class="author-info post-reading-time " style="float:right;"></span> 
-                  </li>
-                  <li class="hide-on-desktop hide-on-tablet">
-                    {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} </span>
-                      <span class="author-info post-reading-time" style="float:right;"></span> 
-                  </li>
+      <div class="wrapper">
+          <div class="grid-container grid-720">
 
-              </ul>
+            <div class="inner-header">
+            <span class="table-span">
+                <span>
+                    <h1 itemprop="name">{{{title}}}</h1>
+                     <ul>
+                    <li class="hide-on-mobile">
+                        {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} {{tags separator=" , " prefix="in "}}</span>
+                          <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
+                          <span class="author-info post-reading-time " style="float:right;"></span> 
+                      </li>
+                      <li class="hide-on-desktop hide-on-tablet">
+                        {{#if author.image}}<img class="author-image" src="{{author.image}}" alt="{{author.name}}">{{/if}}<span class="author-info">{{author.name}} </span>
+                          <span class="author-info post-reading-time" style="float:right;"></span> 
+                      </li>
 
+                  </ul>
+
+                </span>
             </span>
-        </span>
+            </div>
+          </div>
         </div>
-      </div>
     </header>
 
-    <section id="post-container" role='main' class="main-section">
+
+    <section id="post-container" role='main' class="main-section hide-post">
         <div class="grid-container grid-720">
-            <div class="loading-animation grid-100 mobile-grid-100">
-              <i class="fa fa-circle-o-notch fa-spin fa-5x"></i>
-            </div>
 
-        <article class="post hide-post post-page-post" id="{{id}}">
-            <section class="post-text" itemprop="articleBody text">
-                {{content}}
-            </section>
-            <section class="post-page-share clearfix">
-              <ul>
-                <span class="date-posted">
-                  <li><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></li>
-                </span>
-                <span class="share-icons">
-                  <li class="share-title">Share on:</li>
-                  <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
-                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
-                  onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a></li>
-                </span>
-              </ul>
-            </section>
-            <footer class="clearfix">
-                      {{#if tags}}
-              <section class="post-page-tags hide-on-desktop hide-on-tablet">
-                <small>Tags</small>
-                <p>{{tags separator=" , "}}</p>
+        <article class="post post-page-post" id="{{id}}">
+          <div class="wrapper">
+              <section class="post-text" itemprop="articleBody text">
+                  {{content}}
               </section>
-              {{/if}}
-              <section class="post-page-author">
-                <small>About the author</small>
-                <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <ul class="clearfix">
-
-                    
-                    {{#if author.image}}
-                    <li><img src="{{author.image}}" alt="{{author.name}}"></li>
-                      <li>
-                    {{else}}
-                      <li style="margin-left:0;" >
-                    {{/if}}
-                      <h3 rel="author" itemprop="url name">{{author.name}}</h3>
-                      <p>{{author.bio}}</p>
-                    </li>
-                  </ul>
-                </div>
+              <section class="post-page-share">
+                <ul>
+                  <span class="date-posted">
+                    <li><i class="fa fa-calendar-o"></i> <time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></li>
+                  </span>
+                  <span class="share-icons">
+                    <li class="share-title">Share on:</li>
+                    <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a></li>
+                  </span>
+                </ul>
               </section>
-    
-              <!--{{> comments}}-->
-            </footer>  
+              <footer >
+              {{#if tags}}
+                <section class="post-page-tags hide-on-desktop hide-on-tablet">
+                  <small>Tags</small>
+                  <p>{{tags separator=" , "}}</p>
+                </section>
+                {{/if}}
+                <section class="post-page-author">
+                  <small>About the author</small>
+                  <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <ul>
+                      {{#if author.image}}
+                      <li><img src="{{author.image}}" alt="{{author.name}}"></li>
+                        <li>
+                      {{else}}
+                        <li style="margin-left:0;" >
+                      {{/if}}
+                        <h3 rel="author" itemprop="url name">{{author.name}}</h3>
+                        <p>{{author.bio}}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+      
+                <!--{{> comments}}-->
+              </footer>  
+          </div>
         </article>
         </div>
     </section>
 </span>
-  <input type="hidden" id="hidden-bg" value="">
+ 
 
-        {{/post}}
+{{/post}}
 
 
