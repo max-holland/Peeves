@@ -19,6 +19,7 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 * Image lightbox
 * Disqus comment support
 * [Structured data](http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fmaxholland.me%2Fi-want-a-nodecopter%2F)
+* Prism syntax highlighting
 
 ## Installation
 1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
@@ -79,5 +80,8 @@ Un remmed:
 2. Open up **google-authorship.hbs**.
 3. Paste the link of your google plus profile into href="" (see example)
 
+## How to use Prism syntax 
+Use MarkDown syntax and add language-makeup to highlighting html,language-css to highlighting css
+Check more syntax highlighting at Prism document.
 ## Credit
 I would like to thank my pal [Riccardo Guglielmino](http://www.riccardoguglielmino.com/). Who contributed to the original source files not hosted on github.
