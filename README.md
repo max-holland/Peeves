@@ -18,7 +18,7 @@ Based on the style of medium. Peeves offers a clean, minimal design with easy to
 * Responsive design
 * Image lightbox
 * Disqus comment support
-* [Structured data](http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fmaxholland.me%2Fi-want-a-nodecopter%2F)
+* [Structured data](http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fmaxholland.me%2Fpeeves-update-2-1-0%2F)
 
 ## Installation
 1. Download the theme by [clicking here](https://github.com/AtomicThemes/Peeves/releases/latest).
