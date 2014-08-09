@@ -3,19 +3,19 @@
 {{! This is a page template. A page outputs content just like any other post, and has all the same
     attributes by default, but you can also customise it to behave differently if you prefer. }}
 
-{{#post}}
+
     {{#author}}
        {{#if cover}}
             <img id="bg-img" src="{{cover}}">
         {{/if}}
-    
-
+     {{/author}}       
+      
         <header class="main-header about-page-header">
             <div class="wrapper"></div>
         </header>
         <section id="post-container" role='main' class="main-section hide-post">
             <div class="grid-container grid-720">
-                   
+            {{#author}}
                 <article class="post  about-page-post" id="{{id}}">
                     <header>
                     {{#if image}}
@@ -28,22 +28,35 @@
                     <div class="btn-sub-cont"><a class="btn-sub" href="{{url}}rss/">Subscribe</a></div>
                     </header>
                 </article>
-    {{/author}}  
-            
-            <article class="post" id="{{id}}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            {{/author}}
+            {{#foreach posts}}
+                <article class="post" id="{{id}}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
                     <div class="wrapper">
                         <header>
                             <h2 class="post-title" itemprop="name headline"><a href="{{url}}" class="post-link">{{{title}}}</a></h2>
                         </header>
                         <section class="post-text" itemprop="articleBody text">
-                            <p>{{content}}</p>
+                            <p>{{excerpt}}&hellip;</p>
                         </section>
-
+                        <footer>
+                            <ul>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    {{#if author.image}}
+                                    <img class="author-image" src="{{author.image}}" alt="{{author.name}}">
+                                    {{/if}}
+                                    <span class="author-info">
+                                        <span rel="author" itemprop="url name">{{author.name}}</span> 
+                                        <span class="hide-on-mobile">{{tags separator=", " prefix="in "}}</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </footer>
                     </div>
                 </article>
-                {{/post}}
+               {{/foreach}}
             </div>
         </section>
+  
 
 
 

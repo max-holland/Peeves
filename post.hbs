@@ -69,23 +69,34 @@
                   <p>{{tags separator=" , "}}</p>
                 </section>
                 {{/if}}
+                
+                {{! Everything inside the #author tags pulls data from the author }}
+                {{#author}}
                 <section class="post-page-author">
                   <small>About the author</small>
                   <div class="author-wrapper" itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <ul>
-                      {{#if author.image}}
-                      <li><img src="{{author.image}}" alt="{{author.name}}"></li>
+                      {{#if image}}
+                      <li><a href="{{url}}"><img src="{{image}}" alt="{{name}}"></a></li>
                         <li>
                       {{else}}
                         <li style="margin-left:0;" >
                       {{/if}}
-                        <h3 rel="author" itemprop="url name">{{author.name}}</h3>
-                        <p>{{author.bio}}</p>
+                      
+                      <h3 rel="author" itemprop="url name"><a href="{{url}}">{{name}}</a></h3>
+                      {{#if website}}
+                        <p><i class="fa fa-globe"></i> <a href="{{website}}">Website</a></p>
+                      {{/if}}
+                      {{#if bio}}
+                        <p>{{bio}}</p>
+                      {{else}}
+                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                      {{/if}}
                       </li>
                     </ul>
                   </div>
                 </section>
-      
+                {{/author}}
                 <!--{{> comments}}-->
               </footer>  
           </div>
