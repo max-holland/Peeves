@@ -1,0 +1,28 @@
+    {{#foreach posts}}
+    <article class="post" id="{{id}}" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="wrapper">
+            <header>
+                <h2 class="post-title" itemprop="name headline"><a href="{{url}}" class="post-link">{{{title}}}</a></h2>
+            </header>
+            <section class="post-text" itemprop="articleBody text">
+                <p>{{excerpt}}&hellip;</p>
+            </section>
+            <footer>
+                <ul>
+                   {{#author}}
+                    <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        {{#if image}}
+                        <img class="author-image" src="{{image}}" alt="{{name}}">
+                        {{/if}}
+                        <span class="author-info">
+                            <span rel="author" itemprop="url name">{{name}}</span> 
+                            {{/author}} 
+                            <span class="hide-on-mobile">{{tags separator=", " prefix="in "}}</span>
+                        </span>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </article>
+
+    {{/foreach}}
