@@ -1,6 +1,6 @@
 # Peeves
 
-## [View Demo Here](http://peeves.maxholland.me/) |  [Download Here](https://github.com/mholland1337/Peeves/releases/latest)
+## [View Demo Here](http://maxholland.me/) |  [Download Here](https://github.com/mholland1337/Peeves/releases/latest)
 ### Ghost v0.5 [Download Here](https://github.com/mholland1337/Peeves/releases/latest) 
 ### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v2.1.2) 
 ### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6) 
