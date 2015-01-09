@@ -11,11 +11,16 @@ pkg          = require './package.json'
 less         = require 'gulp-less'
 cssmin       = require 'gulp-cssmin'
 autoprefixer = require 'gulp-autoprefixer'
+livereload   = require 'gulp-livereload'
 
 ## -- Files --------------------------------------------------------------------
 
 source =
-  js   : [ "assets/js/init.main.js"]
+  js   : [
+    "assets/js/init.main.js"
+    "assets/js/init.highlight.js"
+  ]
+
   less : "assets/less/__init.less"
 
 dependencies =
@@ -32,11 +37,12 @@ dependencies =
 
 banner = [
   "/**"
-  " * <%= pkg.name %>"
-  " * @version v<%= pkg.version %>"
-  " */"
-  ""
-].join("\n")
+    " * <%= pkg.name %> - <%= pkg.description %>"
+    " * @version  v<%= pkg.version %>"
+    " * @homepage <%= pkg.homepage %>"
+    " * @license  <%= pkg.license %>"
+    " */"
+    ""].join("\n")
 
 # -- TASKS ---------------------------------------------------------------------
 
@@ -57,3 +63,10 @@ gulp.task "js", ->
     .pipe gulp.dest('assets/js')
   return
 
+gulp.task "watch", ->
+  livereload.listen()
+  gulp.watch("assets/less/**/*.less", ["less"]).on('change', livereload.changed)
+  gulp.watch("assets/js/init.*.js", ["js"]).on('change', livereload.changed)
+
+gulp.task "build", -> gulp.start ["less", "js"]
+gulp.task "default", -> gulp.start ["build", "watch"]

@@ -1,17 +1,26 @@
 {
   "name": "peeves",
+  "description": "A free premium ghost theme",
   "version": "2.1.5",
-  "dependencies": {
-    "coffee-script": "*"
-  },
+  "contributors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com",
+      "url": "https://github.com/kikobeats"
+    }
+  ],
   "devDependencies": {
+    "coffee-script": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
     "gulp-cssmin": "*",
     "gulp-header": "*",
     "gulp-less": "*",
+    "gulp-livereload": "*",
     "gulp-uglify": "*",
     "gulp-util": "*"
-  }
+  },
+  "homepage": "https://github.com/mholland1337/Peeves",
+  "license": "MIT"
 }
