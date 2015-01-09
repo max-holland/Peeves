@@ -319,6 +319,20 @@ $(function() {
         $('.menu-btn').addClass('tags-menu-btn');
     }
 
+    //Need to add id to header image on post page..
+
+    // Only add heade button is not yet setted!
+
+    PostHeaderImage = $('.main-header.post-page-header').css('background-image') !== 'none'
+
+    if (!PostHeaderImage){
+      app.getHeaderImg('.post-page-post .post-text')
+    }
+
+    if(app.elemExists('#bg-img')){
+      bgImgLoaded('#bg-img');
+    }
+
     //Call Plugin Functions
     if (app.elemExists('.page-number', '.older-posts')) {
         initInfiniteScroll('.page-number', '.older-posts');
