@@ -1,0 +1,95 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background: #191918;
+    color: #b3b3b1;
+    z-index: 1
+}
+
+.sidebar.opened {
+    left: 0
+}
+
+.sidebar ul {
+    padding: 20px 30px;
+    margin: 0;
+    list-style: none
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    font-weight: 300;
+    font-size: 1em
+}
+
+.sidebar ul li:first-child {
+    margin-top: 10px
+}
+
+.sidebar ul li a:hover {
+    color: #fff
+}
+
+.sidebar ul li i {
+    margin-right: 10px
+}
+
+.sidebar ul li:last-child {
+    padding-bottom: 0
+}
+
+.sidebar .side-header {
+    font-weight: 400;
+    color: #fff!important;
+    margin-top: 30px;
+    border-bottom: 1px solid #21211f;
+    margin-bottom: 10px
+}
+
+.sidebar .side-header:first-child {
+    margin-top: 0
+}
+
+.navbar {
+    position: absolute;
+    z-index: 100
+}
+
+.navbar .menu-btn {
+    top: 10px;
+    left: 10px;
+    border: none;
+    background: 0 0;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    font-family: 'Merriweather',serif;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 48px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0
+}
+
+.navbar.opened {
+    left: 200px
+}
+
+.navbar .tags-menu-btn {
+    color: #333332
+}
+
+.navbar-safari {
+    transition: left .3s ease-out
+}
+
+.navbar-safari.opened {
+    left: 200px
+}

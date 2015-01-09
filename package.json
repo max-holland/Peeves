@@ -1,4 +1,17 @@
 {
-  "name": "Peeves",
-  "version": "2.1.5"
+  "name": "peeves",
+  "version": "2.1.5",
+  "dependencies": {
+    "coffee-script": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-header": "*",
+    "gulp-less": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*"
+  }
 }

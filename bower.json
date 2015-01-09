@@ -1,0 +1,27 @@
+{
+  "name": "Peeves",
+  "version": "2.1.5",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "dependencies": {
+    "fitvids": "~1.1.0",
+    "fluidbox": "~1.4.2",
+    "highlight.js": "git://github.com/isagalaev/highlight.js#~7.0.1",
+    "imagesloaded": "~3.1.8",
+    "jquery-backstretch": "~2.0.4",
+    "jquery-infinite-scroll": "~2.1.0",
+    "reading-time": "~1.0.0"
+  },
+  "homepage": "https://github.com/Kikobeats/Peeves",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "private": true
+}

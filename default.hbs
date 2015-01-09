@@ -13,7 +13,7 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
-    
+
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no">
@@ -22,19 +22,9 @@
 
     <!-- Google Authorship and Publisher Markup -->
     {{> google-authorship}}
-    
+
     {{! Styles'n'Scripts }}
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
-    <style>
-        /* Gulp keeps removing webkit/moz support */
-          *{
-              -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-              -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-              box-sizing: border-box;         /* Opera/IE 8+ */
-          }
-    </style>
-    <script src="{{asset "scripts/vendor/modernizr.js"}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/peeves.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -54,15 +44,15 @@
         <nav id="navbar" class="navbar">
          <button class="menu-btn" id="openMenu"><span class="table-span"><span id="letter"></span></span></button>
         </nav>
-    
+
     {{{body}}}
 
             <footer class="main-footer">
               <div class="grid-container grid-720">
-                
+
                   <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
                   <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
-                
+
               </div>
             </footer>
 
@@ -73,24 +63,7 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    
-    <script src="{{asset "scripts/backstretch.min.js"}}"></script>
-    
-    <script src="{{asset "scripts/highlight.pack.js"}}"></script>
-
-    <script src="{{asset "scripts/imagesloaded.min.js"}}"></script>
-
-    <script src="{{asset "scripts/readingTime.min.js"}}"></script>
-
-    <script src="{{asset "scripts/jquery.fitvids.js"}}"></script>
-
-    <script src="{{asset "scripts/jquery.fluidbox.min.js"}}"></script>
-
-    <script src="{{asset "scripts/infinitescroll.js"}}"></script>
-
-    <script src="{{asset "scripts/nanobar.min.js"}}"></script>
-
-    <script src="{{asset "scripts/main.js"}}"></script>
+    <script src="{{asset "js/peeves.js"}}"></script>
 
     {{> google-analytics}}
 
