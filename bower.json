@@ -18,7 +18,8 @@
     "jquery-infinite-scroll": "~2.1.0",
     "reading-time": "~1.0.0",
     "parrotjs": "*",
-    "parrot-module-device": "*"
+    "parrot-module-device": "*",
+    "pace": "~1.0.2"
   },
   "homepage": "https://github.com/mholland1337/Peeves",
   "ignore": [
