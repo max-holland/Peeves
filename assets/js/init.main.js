@@ -11,33 +11,11 @@
     };
 
     app.isSafari = function() {
-        if (app._isSafari === null) {
-            var userAgent = navigator.userAgent;
-            var chrome = userAgent.indexOf('Chrome');
-            var safari = userAgent.indexOf('Safari');
-
-            if (safari != -1 && chrome == -1) {
-                app._isSafari = true;
-            } else {
-                app._isSafari = false;
-            }
-        }
-
-        return app._isSafari;
+      return parrot.device.browser.name.toLowerCase().indexOf('safari') !== -1
     }
 
-
     app.isMobile = function() {
-        if (app._isMobile === null) {
-            var mobileDevices = /(Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini)/i;
-            if (mobileDevices.test(navigator.userAgent)) {
-                app._isMobile = true;
-            } else {
-                app._isMobile = false;
-            }
-        }
-
-        return app._isMobile;
+      return parrot.device.type === 'mobile';
     }
 
     app.getBgImg = function(elem) {
@@ -52,7 +30,6 @@
         return app._bgImageLink;
     }
 
-
     app.replaceAll = function(str, find, replace) {
         return str.replace(new RegExp(find, 'g'), replace);
     }
@@ -66,8 +43,6 @@
             return false;
         }
     }
-
-
 
     app.getTag = function(elem) {
 
@@ -88,7 +63,6 @@
 
         return app._searchedTag;
     }
-
 
     app.getFirstChar = function(elem, target) {
         if (app._buttonLetter === null) {
@@ -189,8 +163,6 @@ var bgImgLoaded = function(elem) {
     });
 }
 
-
-
 var initReadTime = function(elem) {
     elem = $(elem);
     readingTime = $('.post-reading-time');
@@ -246,8 +218,6 @@ var initNavBar = function() {
         }
     });
 }
-
-
 
 var initInfiniteScroll = function(pageNumber, nextPage) {
     var maxPageNumber = $(pageNumber);
@@ -347,16 +317,6 @@ $(function() {
     if (app.getTag('#tag-search') !== null) {
         $('#tag-search').html(app.getTag('#tag-search'));
         $('.menu-btn').addClass('tags-menu-btn');
-    }
-
-    //Need to add id to header image on post page..
-
-    if (app.elemExists('.post-page-post .post-text')) {
-        app.getHeaderImg('.post-page-post .post-text')
-    }
-
-    if (app.elemExists('#bg-img') !== null) {
-        bgImgLoaded('#bg-img');
     }
 
     //Call Plugin Functions

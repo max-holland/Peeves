@@ -16,7 +16,9 @@
     "jquery": "~1.x",
     "jquery-backstretch": "~2.0.4",
     "jquery-infinite-scroll": "~2.1.0",
-    "reading-time": "~1.0.0"
+    "reading-time": "~1.0.0",
+    "parrotjs": "*",
+    "parrot-module-device": "*"
   },
   "homepage": "https://github.com/mholland1337/Peeves",
   "ignore": [

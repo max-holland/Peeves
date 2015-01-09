@@ -9,7 +9,7 @@
         {{#post}}
 
  <span itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="main-header post-page-header">
+    <header class="main-header post-page-header" style="background-image: url({{image}})">
       <div class="wrapper">
           <div class="grid-container grid-720">
 
@@ -24,21 +24,21 @@
                         {{#if image}}
                           <img class="author-image" src="{{image}}" alt="{{name}}">
                         {{/if}}
-                          <span class="author-info">{{name}} 
+                          <span class="author-info">{{name}}
                         {{/author}}
                         {{tags separator=" , " prefix="in "}}</span>
-                          <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span> 
-                          <span class="author-info post-reading-time " style="float:right;"></span> 
+                          <span class="author-info hide-on-mobile" style="float:right;">&nbsp;read</span>
+                          <span class="author-info post-reading-time " style="float:right;"></span>
                       </li>
                       <li class="hide-on-desktop hide-on-tablet">
                         {{#author}}
                           {{#if author.image}}
                             <img class="author-image" src="{{image}}" alt="{{name}}">
                           {{/if}}
-                            <span class="author-info">{{name}} 
-                          {{/author}} 
+                            <span class="author-info">{{name}}
+                          {{/author}}
                         </span>
-                          <span class="author-info post-reading-time" style="float:right;"></span> 
+                          <span class="author-info post-reading-time" style="float:right;"></span>
                       </li>
 
                     </ul>
@@ -82,7 +82,7 @@
                   <p>{{tags separator=" , "}}</p>
                 </section>
                 {{/if}}
-                
+
                 {{! Everything inside the #author tags pulls data from the author }}
                 {{#author}}
                 <section class="post-page-author">
@@ -95,7 +95,7 @@
                       {{else}}
                         <li style="margin-left:0;" >
                       {{/if}}
-                      
+
                       <h3 rel="author" itemprop="url name"><a href="{{url}}">{{name}}</a></h3>
                       {{#if website}}
                         <p><i class="fa fa-globe"></i> <a href="{{website}}">Website</a></p>
@@ -111,13 +111,13 @@
                 </section>
                 {{/author}}
                 <!--{{> comments}}-->
-              </footer>  
+              </footer>
           </div>
         </article>
         </div>
     </section>
 </span>
- 
+
 
 {{/post}}
 

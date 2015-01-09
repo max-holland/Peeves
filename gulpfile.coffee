@@ -26,6 +26,8 @@ source =
 dependencies =
   js: [
     "assets/vendor/jquery/jquery.min.js"
+    "assets/vendor/parrotjs/dist/parrot.standalone.js"
+    "assets/vendor/parrot-module-device/dist/parrot.device.js"
     "assets/vendor/jquery-backstretch/jquery.backstretch.min.js"
     "assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"
     "assets/vendor/reading-time/build/readingTime.min.js"
