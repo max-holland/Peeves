@@ -1,65 +1,54 @@
 .main-header {
-    width: 100%;
-    height: 430px;
-    background-color: #191918;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center
-}
-
-.main-header .grid-container {
-    height: 100%
-}
-
-.main-header .wrapper {
+  width: 100%;
+  height: 430px;
+  background-color: @gray-darkest;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  .grid-container {
     height: 100%;
+  }
+  .wrapper {
     width: 100%;
-    background: rgba(0,0,0,.3)
-}
-
-.main-header .inner-header {
     height: 100%;
+    background: fade(@black, 30%);
+  }
+  .inner-header {
+    height: 100%;
+    color: @white;
     text-align: center;
-    color: #fff
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 50px;
+      font-weight: @font-weight-bold;
+      line-height: 58px;
+    }
+    h2 {
+      padding: 0;
+      margin: 8px 0 20px;
+      font-size: 16px;
+      font-weight: @font-weight-normal;
+      line-height: 1.6em;
+      color: fade(@white, 90%);
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      color: fade(@white, 90%);
+      list-style: none;
+      li {
+        display: inline;
+      }
+    }
+  }
 }
-
-.main-header .inner-header h1 {
-    font-weight: 700;
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-    line-height: 58px
-}
-
-.main-header .inner-header h2 {
-    font-size: 16px;
-    padding: 0;
-    margin: 8px 0 20px;
-    line-height: 1.6em;
-    color: rgba(255,255,255,.9);
-    font-weight: 400
-}
-
-.main-header .inner-header ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    color: rgba(255,255,255,.9)
-}
-
-.main-header .inner-header ul li {
-    display: inline
-}
-
-
-
 .tag-page-header {
-    height: auto!important;
-    background: #fff;
-    color: #333332
-}
-
-.tag-page-header h1 {
-    font-size: 50px
+  height: auto !important;
+  color: @gray-darker;
+  background: @white;
+  h1 {
+    font-size: 50px;
+  }
 }
