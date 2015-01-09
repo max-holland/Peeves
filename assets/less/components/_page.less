@@ -1,56 +1,48 @@
-.page-wrapper,#sidebar {
+.page-wrapper,
+#sidebar {
   transition: left .3s ease-out;
-  }
-
+}
 .page-wrapper {
   position: relative;
   left: 0;
   z-index: 0;
   width: 100%;
+  &.opened {
+    left: 200px;
   }
-
-.page-wrapper.opened {
-  left: 200px;
-  }
-
+}
 .about-page-post {
   padding-top: 0;
   margin-top: -60px;
+  .wrapper {
+    padding-top: 0;
   }
-
-.about-page-post .wrapper {
-  padding-top: 0;
+  header {
+    margin-bottom: 50px;
+    .about-profile-wrapper {
+      width: 100%;
+    }
+    .about-profile-img {
+      width: 120px;
+      height: 120px;
+      padding: 5px;
+      margin: auto;
+      background: @white;
+      border-radius: 50%;
+      box-shadow: 0 1px 1px fade(@white, 30%);
+      img {
+        width: 100% !important;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+      }
+    }
   }
-
-.about-page-post header {
-  margin-bottom: 50px;
+  .post-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
   }
-
-.about-page-post header .about-profile-wrapper {
-  width: 100%;
-  }
-
-.about-page-post header .about-profile-img {
-  width: 120px;
-  height: 120px;
-  padding: 5px;
-  margin: auto;
-  background: @white;
-  border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0,0,0,.3);
-  }
-
-.about-page-post header .about-profile-img img {
-  width: 100%!important;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
-  }
-
-.about-page-post .post-title {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 50px;
-  text-align: center;
-  }
+}

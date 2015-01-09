@@ -1,95 +1,87 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -200px;
-    width: 200px;
-    height: 100%;
-    background: #191918;
-    color: #b3b3b1;
-    z-index: 1
-}
-
-.sidebar.opened {
-    left: 0
-}
-
-.sidebar ul {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  z-index: 1;
+  width: 200px;
+  height: 100%;
+  color: @gray-dark;
+  background: @gray-darkest;
+  &.opened {
+    left: 0;
+  }
+  ul {
     padding: 20px 30px;
     margin: 0;
-    list-style: none
-}
+    list-style: none;
+    li {
+      padding: 8px 0;
+      font-size: 1em;
+      font-weight: @font-weight-light;
+      transition: padding 200ms ease-in-out;
 
-.sidebar ul li {
-    padding: 8px 0;
-    font-weight: 300;
-    font-size: 1em
-}
+      a:hover {
+        color: @white;
+      }
+      i {
+        margin-right: 10px;
+      }
+      &:first-child {
+        margin-top: 10px;
+      }
 
-.sidebar ul li:first-child {
-    margin-top: 10px
-}
-
-.sidebar ul li a:hover {
-    color: #fff
-}
-
-.sidebar ul li i {
-    margin-right: 10px
-}
-
-.sidebar ul li:last-child {
-    padding-bottom: 0
-}
-
-.sidebar .side-header {
-    font-weight: 400;
-    color: #fff!important;
+      &:not(.side-header) {
+        &:hover {
+          background-color: @gray-darker;
+          padding-left: 0.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+  .side-header {
     margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: @font-weight-normal;
+    color: @white !important;
     border-bottom: 1px solid #21211f;
-    margin-bottom: 10px
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
-
-.sidebar .side-header:first-child {
-    margin-top: 0
-}
-
 .navbar {
-    position: absolute;
-    z-index: 100
-}
-
-.navbar .menu-btn {
+  position: absolute;
+  z-index: 100;
+  &.opened {
+    left: 200px;
+  }
+  .menu-btn {
     top: 10px;
     left: 10px;
-    border: none;
-    background: 0 0;
-    color: #fff;
     width: 44px;
     height: 44px;
+    padding: 0;
     margin-top: 10px;
     margin-left: 10px;
-    outline: none;
-    font-family: 'Merriweather',serif;
-    font-weight: 900;
+    font-family: @secondary-font;
     font-size: 27px;
+    font-weight: @font-weight-extra-bold;
     line-height: 48px;
-    cursor: pointer;
+    color: @white;
     text-align: center;
-    padding: 0
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    outline: none;
+  }
+  .tags-menu-btn {
+    color: @gray-darker;
+  }
 }
-
-.navbar.opened {
-    left: 200px
-}
-
-.navbar .tags-menu-btn {
-    color: #333332
-}
-
 .navbar-safari {
-    transition: left .3s ease-out
-}
-
-.navbar-safari.opened {
-    left: 200px
+  transition: left .3s ease-out;
+  .opened {
+    left: 200px;
+  }
 }

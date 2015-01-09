@@ -25,7 +25,6 @@ source =
 
 dependencies =
   js: [
-    "assets/vendor/jquery/jquery.min.js"
     "assets/vendor/parrotjs/dist/parrot.standalone.js"
     "assets/vendor/parrot-module-device/dist/parrot.device.js"
     "assets/vendor/jquery-backstretch/jquery.backstretch.min.js"
@@ -34,12 +33,13 @@ dependencies =
     "assets/vendor/fitvids/jquery.fitvids.js"
     "assets/vendor/fluidbox/jquery.fluidbox.min.js"
     "assets/vendor/jquery-infinite-scroll/jquery.infinitescroll.min.js"
+    "assets/vendor/pace/pace.min.js"
     "assets/js/highlight.pack.js"
   ]
 
 banner = [
   "/**"
-    " * <%= pkg.name %> - <%= pkg.description %>"
+    " * Peeves    <%= pkg.description %>"
     " * @version  v<%= pkg.version %>"
     " * @homepage <%= pkg.homepage %>"
     " * @license  <%= pkg.license %>"

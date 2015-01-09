@@ -1,19 +1,18 @@
 .btn-sub-cont {
   text-align: center;
+  .btn-sub {
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 10;
+    line-height: 44px;
+    color: red;
+    border: 1px solid lighten(red,
+    30%);
+    border-radius: 999em;
+    &:hover {
+      color: red;
+      background: 0 0;
+      border: 1px solid red;
+    }
   }
-
-.btn-sub-cont .btn-sub {
-  padding: 12px 18px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 44px;
-  color: @theme;
-  border: 1px solid #a9d8b3;
-  border-radius: 999em;
-  }
-
-.btn-sub-cont .btn-sub:hover {
-  color: #468c54;
-  background: 0 0;
-  border: 1px solid @theme;
-  }
+}
