@@ -1,0 +1,42 @@
+.fluidbox {
+    outline: none
+}
+
+.fluidbox-overlay {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .25s ease-in-out
+}
+
+.fluidbox-wrap {
+    margin: 0 auto;
+    position: relative
+}
+
+.fluidbox-wrap,.fluidbox-ghost {
+    background-size: cover;
+    background-position: center center;
+    transition: all .25s ease-in-out
+}
+
+.fluidbox-ghost {
+    position: absolute
+}
+
+.fluidbox-closed .fluidbox-ghost {
+    transi_fluidtion-property: top,left,opacity,-webkit-transform;
+    transition-property: top,left,opacity,transform;
+    transition-delay: 0,0,.25s,0
+}
+
+.fluidbox-closed .fluidbox-wrap img {
+    transition-property: opacity;
+    transition-delay: .25s;
+    transition-duration: 0
+}
