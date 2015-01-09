@@ -20,6 +20,7 @@ source =
 
 dependencies =
   js: [
+    "assets/vendor/jquery/jquery.min.js"
     "assets/vendor/jquery-backstretch/jquery.backstretch.min.js"
     "assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"
     "assets/vendor/reading-time/build/readingTime.min.js"
