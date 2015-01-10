@@ -1,9 +1,9 @@
 # Peeves
 
 ## [Download Here](https://github.com/mholland1337/Peeves/releases/latest)
-### Ghost v0.5 [Download Here](https://github.com/mholland1337/Peeves/releases/latest) 
-### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v2.1.2) 
-### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6) 
+### Ghost v0.5 [Download Here](https://github.com/mholland1337/Peeves/releases/latest)
+### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v2.1.2)
+### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6)
 
 ![Peeves screenshot index page](https://bff4d6e4f60bfb233ad43d411f0c7a2f9118f658.googledrive.com/host/0B3-IFpi4iZ9TVE16MU1zNWV3WDQ/peeves-index.png)
 
@@ -84,4 +84,4 @@ Un remmed:
 3. Paste the link of your google plus profile into href="" (see example)
 
 ## Credit
-I would like to thank my pal [Riccardo Guglielmino](http://www.riccardoguglielmino.com/). Who contributed to the original source files not hosted on github.
+I would like to thank my pal [Riccardo Guglielmino](http://www.riccardoguglielmino.com/). Who contributed to the original source files not hosted on github. I'd also like to thank [Kiko Beats](https://github.com/Kikobeats) for giving peeves some tlc after months of neglect.
