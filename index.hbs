@@ -6,7 +6,7 @@
 
 {{! The big featured header on the homepage, with the site description }}
 
-<header class="main-header">
+<header class="main-header" {{#if @blog.cover}}style="background-image:URL('{{@blog.cover}}')"{{/if}}>
     <div class="wrapper">
         <div class="grid-container grid-720">
             <div class="inner-header">
@@ -25,13 +25,12 @@
 {{! The main content area on the homepage }}
 <section id="post-container" role='main' class="main-section hide-post">
     <div class="grid-container grid-720">
-    
-    {{#if @blog.cover}}<img id="bg-img" src="{{@blog.cover}}">{{/if}}
+
 
     {{! Each post will be output using this markup }}
 
 
-    
+
     {{! The tag below includes the post loop - partials/post-loop.hbs }}
     {{> "post-loop"}}
     </div>
@@ -43,4 +42,3 @@
         {{pagination}}
     </div>
 </section>
-
