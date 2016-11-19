@@ -5,11 +5,11 @@
 ### Ghost v0.4.2 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v2.1.2)
 ### Ghost v0.4.1 [Download Here](https://github.com/mholland1337/Peeves/releases/tag/v1.0.6)
 
-![Peeves screenshot index page](https://lh6.googleusercontent.com/MtSCpP2ttgOFQaTfiw4I8ma0Xy75jH7FzOO_sqOxLTNdUVLeBvLCkQeuM76jT05RRN9fKw77qwNTyg=w1280-h648-rw)
+![Peeves screenshot index page](http://res.cloudinary.com/dqmsrcjxwj/image/upload/v1479549996/peeves-index_utbdei.png)
 
 Based on the style of medium. Peeves offers a clean, minimal design with easy to read typography. And it's mobile optimized!
 
-![Peeves screenshot post](https://lh5.googleusercontent.com/BlY8nm4gZE46q0-XMLq5ZrdNIVpMKWKRawjmMSr0O-fu0LyCEr03yva2QYsCtWxP_Y38Xqa07IlnOQ=w1280-h648-rw)
+![Peeves screenshot post](http://res.cloudinary.com/dqmsrcjxwj/image/upload/v1479550006/peeves-post_kkinxw.png)
 
 ## Features
 * Sidebar
